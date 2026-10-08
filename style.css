@@ -1,323 +1,194 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html>
 
-html {
-    scroll-behavior: smooth;
-}
+<head>
 
-body {
-    font-family: Arial, sans-serif;
+    <title>TechTalk Blog</title>
 
-    background-color: #f7f1e8;
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
 
-    color: #30251f;
+</head>
 
-    line-height: 1.6;
-}
+<body>
 
+    <div class="navbar">
 
-/* Navigation */
+        <div class="logo">
+            TechTalk
+        </div>
 
-.navbar {
-    display: flex;
+        <div class="links">
 
-    justify-content: space-between;
+            <a href="#home">Home</a>
 
-    align-items: center;
+            <a href="#posts">Blog</a>
 
-    padding: 20px 8%;
+            <a href="#about">About</a>
 
-    background-color: #30251f;
+            <a href="#contact">Contact</a>
 
-    position: sticky;
+        </div>
 
-    top: 0;
+    </div>
 
-    z-index: 100;
-}
 
-.logo {
-    color: #f2c078;
+    <div class="hero" id="home">
 
-    font-size: 25px;
+        <p>WELCOME TO TECHTALK</p>
 
-    font-weight: bold;
-}
+        <h1>
+            Explore Ideas, Technology & Creativity
+        </h1>
 
-.links {
-    display: flex;
+        <p>
+            Discover articles about technology,
+            programming and web development.
+        </p>
 
-    gap: 25px;
-}
+        <a href="#posts">
+            Read Articles
+        </a>
 
-.links a {
-    color: white;
+    </div>
 
-    text-decoration: none;
 
-    font-weight: bold;
-}
+    <div id="posts" class="posts">
 
-.links a:hover {
-    color: #f2c078;
-}
+        <h2>
+            Latest Articles
+        </h2>
 
 
-/* Hero */
+        <div class="cards">
 
-.hero {
-    min-height: 75vh;
+            <div class="card">
 
-    display: flex;
+                <span>
+                    Web Development
+                </span>
 
-    align-items: center;
+                <h3>
+                    Why Responsive Design Matters
+                </h3>
 
-    padding: 80px 10%;
+                <p>
+                    Learn how responsive design helps
+                    websites work better on phones,
+                    tablets and computers.
+                </p>
 
-    background:
-        linear-gradient(
-            rgba(48, 37, 31, 0.7),
-            rgba(48, 37, 31, 0.7)
-        );
+                <a href="#">
+                    Read More
+                </a>
 
-    background-color: #6f4e37;
+            </div>
 
-    color: white;
-}
 
-.hero h1 {
-    font-size: 60px;
+            <div class="card">
 
-    margin: 10px 0;
-}
+                <span>
+                    Programming
+                </span>
 
-.small {
-    color: #f2c078;
+                <h3>
+                    Getting Started with JavaScript
+                </h3>
 
-    letter-spacing: 4px;
+                <p>
+                    Learn the basics of JavaScript
+                    and how it makes websites interactive.
+                </p>
 
-    font-weight: bold;
-}
+                <a href="#">
+                    Read More
+                </a>
 
-.hero p:not(.small) {
-    max-width: 550px;
+            </div>
 
-    color: #eee;
 
-    margin-bottom: 30px;
-}
+            <div class="card">
 
+                <span>
+                    Technology
+                </span>
 
-/* Button */
+                <h3>
+                    Technology in Student Life
+                </h3>
 
-.button {
-    display: inline-block;
+                <p>
+                    Explore how technology can help
+                    students learn and create.
+                </p>
 
-    padding: 13px 25px;
+                <a href="#">
+                    Read More
+                </a>
 
-    background-color: #f2c078;
+            </div>
 
-    color: #30251f;
+        </div>
 
-    text-decoration: none;
+    </div>
 
-    border-radius: 7px;
 
-    font-weight: bold;
-}
+    <div id="about" class="about">
 
-.button:hover {
-    background-color: #e0a85e;
-}
+        <h2>
+            About TechTalk
+        </h2>
 
+        <p>
+            TechTalk is a simple technology blog
+            created as part of the Web Designing Lab.
+        </p>
 
-/* Sections */
+    </div>
 
-.section {
-    padding: 80px 10%;
 
-    text-align: center;
-}
+    <div id="contact" class="contact">
 
-.section h2 {
-    font-size: 38px;
+        <h2>
+            Contact Us
+        </h2>
 
-    color: #6f4e37;
+        <form>
 
-    margin-bottom: 40px;
-}
+            <input
+                type="text"
+                placeholder="Name"
+            >
 
+            <input
+                type="email"
+                placeholder="Email"
+            >
 
-/* Menu Cards */
+            <textarea
+                rows="5"
+                placeholder="Message"
+            ></textarea>
 
-.cards {
-    display: flex;
+            <button>
+                Send Message
+            </button>
 
-    justify-content: center;
+        </form>
 
-    gap: 25px;
+    </div>
 
-    flex-wrap: wrap;
-}
 
-.card {
-    width: 280px;
+    <div class="footer">
 
-    padding: 30px;
+        <p>
+            © 2026 TechTalk
+        </p>
 
-    background-color: white;
+    </div>
 
-    border-radius: 12px;
+</body>
 
-    box-shadow:
-        0 5px 20px rgba(0, 0, 0, 0.1);
-
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-7px);
-}
-
-.card h3 {
-    color: #6f4e37;
-
-    margin-bottom: 15px;
-}
-
-.card p {
-    color: #666;
-
-    margin-bottom: 15px;
-}
-
-.card strong {
-    color: #a05a2c;
-
-    font-size: 20px;
-}
-
-
-/* About */
-
-.about {
-    background-color: #30251f;
-
-    color: white;
-}
-
-.about h2 {
-    color: #f2c078;
-}
-
-.about p {
-    max-width: 750px;
-
-    margin: auto;
-
-    color: #ddd;
-}
-
-
-/* Contact */
-
-form {
-    max-width: 600px;
-
-    margin: auto;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 15px;
-}
-
-input,
-textarea {
-    width: 100%;
-
-    padding: 14px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 7px;
-
-    font-size: 16px;
-
-    font-family: Arial;
-}
-
-input:focus,
-textarea:focus {
-    outline: 2px solid #6f4e37;
-}
-
-button {
-    padding: 14px;
-
-    background-color: #6f4e37;
-
-    color: white;
-
-    border: none;
-
-    border-radius: 7px;
-
-    font-size: 16px;
-
-    font-weight: bold;
-
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #4d3525;
-}
-
-
-/* Footer */
-
-.footer {
-    padding: 30px;
-
-    text-align: center;
-
-    background-color: #201812;
-
-    color: #aaa;
-}
-
-.footer p:first-child {
-    color: #f2c078;
-
-    margin-bottom: 5px;
-}
-
-
-/* Responsive */
-
-@media (max-width: 700px) {
-
-    .navbar {
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    .links {
-        gap: 12px;
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-}
+</html>
